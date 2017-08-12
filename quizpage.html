@@ -7,6 +7,8 @@
     <title>General Knowledge Quiz</title>
     <link rel='stylesheet' href='css/style.css' />
     <img src="record logo.png" alt="My Artwork" class="logo" style="">
+    <script src='js/main.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
 </head>
 
 
@@ -17,35 +19,39 @@
 <form id= "quiz" name= "quiz">
 
  <p> What is the name of the greatest city on Earth!!!</p>
-        <input id= "textbox" type="text" name="question0">
+        <input id= "textbox" type= "text" name= "question1">
 
  <p> Which of these football teams play here?</p>
-  <input type="radio" id= "multichoice" name="q1option1" value="Manchester United FC"> Manchester United <br>
-  <input type="radio" id= "multichoice" name="q1option2" value="Manchester City FC"> Manchester City <br>
-  <input type="radio" id= "multichoice" name="q1option3" value="Liverpool FC"> Liverpool FC <br>
-
+  <input type= "radio" id= "multichoice" name= "question2" value= "Manchester United FC"> Manchester United FC <br>
+  <input type= "radio" id= "multichoice" name= "question2" value= "Manchester City FC"> Manchester City FC <br>
+  <input type= "radio" id= "multichoice" name= "question2" value= "Liverpool FC"> Liverpool FC <br>
+ <!--
  <p> Which of these famous muscians/bands originated from Manchester?</p>
-  <input type="radio" id= "multichoice" name="q2option1" value="Oasis"> Oasis <br>
+  <input type="radio" id= "multichoice" name="qption1" value="Oasis"> Oasis <br>
   <input type="radio" id= "multichoice" name="q2option2" value="Ian Brown"> Ian Brown <br>
   <input type="radio" id= "multichoice" name="q2option3" value="The Beatles"> The Beatles <br>
-  
-  <p> Historically who are our arch-nemeses/rivals/n3n believers? </p>
+ 
+
+  <p> Historically who are our arch-nemeses/rivals/non believers? </p>
   <input type="radio" id= "multichoice" name="q3option1" value="Liverpool"> Liverpool <br>
   <input type="radio" id= "multichoice" name="q3option2" value="Any 'other' city"> Any 'other' city <br>
   <input type="radio" id= "multichoice" name="q3option3" value="The South"> The South <br>
- 
-  <input id = "button" type ="button" value= "I'm done!" oneclick = "check();">
+--> 
+  <input id = "button" type = "button" value= "I'm finished!" onclick = "check();" > <!-- NOT PLAYING BALL!!!-->
 
 
 </form> 
 
+<div id = "after_submit">
+<p id = "number_correct"></p>    
+</div>
+</html>
 
 
 
 
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
-<script src='js/main.js'></script>
+
 
 </body>
 </html>
